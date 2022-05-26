@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--  ------------------ FLEX概論 ------------------  -->
+    <h1>FLEX概論</h1>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item item-long">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <!--  ------------------ FLEX特性 ------------------  -->
+    <h1>FLEX特性</h1>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">若長寬<br>沒寫死<br>則依照比例自適應</div>
+    </div>
+
+    <!--  ------------------ flex-direction : 主軸方向 ------------------  -->
+    <h1>flex-direction : 主軸方向</h1>
+    <div class="fd-container">
+        <div class="fd-row fd-box">
+            <div class="fd-item">1</div>
+            <div class="fd-item">2</div>
+        </div>
+        <div class="fd-row-reverse fd-box">
+            <div class="fd-item">1</div>
+            <div class="fd-item">2</div>
+        </div>
+        <div class="fd-column fd-box">
+            <div class="fd-item">1</div>
+            <div class="fd-item">2</div>
+        </div>
+        <div class="fd-column-reverse fd-box">
+            <div class="fd-item">1</div>
+            <div class="fd-item">2</div>
+        </div>
+    </div>
+
+    <!--  ------------------ justify-content : 主軸對齊 ------------------  -->
+    <h1>justify-content : 主軸對齊</h1>
+    <div class="jc-container">
+        <div class="jc-flex-start jc-box">
+            <div class="jc-item">1</div>
+            <div class="jc-item">2</div>
+            <div class="jc-item">3</div>
+        </div>
+        <div class="jc-center jc-box">
+            <div class="jc-item">1</div>
+            <div class="jc-item">2</div>
+            <div class="jc-item">3</div>
+        </div>
+        <div class="jc-space-around jc-box">
+            <div class="jc-item">1</div>
+            <div class="jc-item">2</div>
+            <div class="jc-item">3</div>
+        </div>
+    </div>
+    <div class="jc-container">
+        <div class="jc-end jc-box">
+            <div class="jc-item">1</div>
+            <div class="jc-item">2</div>
+            <div class="jc-item">3</div>
+        </div>
+        <div class="jc-space-between jc-box">
+            <div class="jc-item">1</div>
+            <div class="jc-item">2</div>
+            <div class="jc-item">3</div>
+        </div>
+        <div class="jc-space-evenly jc-box">
+            <div class="jc-item">1</div>
+            <div class="jc-item">2</div>
+            <div class="jc-item">3</div>
+        </div>
+    </div>
+
+    <!--  ------------------ 並排選單 ------------------  -->
+    <h1>並排選單</h1>
+    <ul class="menu">
+        <li><a href="＃">首頁</a></li>
+        <li><a href="＃">運動</a></li>
+        <li><a href="＃">財經</a></li>
+        <li><a href="＃">股票</a></li>
+        <li><a href="＃">音樂</a></li>
+        <li><a href="＃">科技</a></li>
+    </ul>
+
+    <!--  ------------------ flex-wrap : 換行 ------------------  -->
+    <h1>flex-wrap : 換行</h1>
+    <ul class="menu">    <!--自適應寬度(不符合設計圖)-->
+        <li><a href="＃">首頁</a></li>
+        <li><a href="＃">運動</a></li>
+        <li><a href="＃">財經</a></li>
+        <li><a href="＃">股票</a></li>
+        <li><a href="＃">音樂</a></li>
+        <li><a href="＃">科技</a></li>
+        <li><a href="＃">娛樂</a></li>
+        <li><a href="＃">文學</a></li>
+    </ul>
+    <ul class="menu-fw">
+        <li><a href="＃">首頁</a></li>
+        <li><a href="＃">運動</a></li>
+        <li><a href="＃">財經</a></li>
+        <li><a href="＃">股票</a></li>
+        <li><a href="＃">音樂</a></li>
+        <li><a href="＃">科技</a></li>
+        <li><a href="＃">娛樂</a></li>
+        <li><a href="＃">文學</a></li>
+    </ul>
+
+    <!--  ------------------ align-items : 交錯軸對齊 ------------------  -->
+    <h1>align-items : 交錯軸對齊</h1>
+    <div class="ai-container">
+        <div class="ai-flex-start ai-box">
+            <div class="ai-item">1</div>
+            <div class="ai-item">2</div>
+            <div class="ai-item">3</div>
+        </div>
+        <div class="ai-center ai-box">
+            <div class="ai-item">1</div>
+            <div class="ai-item">2</div>
+            <div class="ai-item">3</div>
+        </div>
+        <div class="ai-strech ai-box">
+            <div class="ai-item">1</div>
+            <div class="ai-item">2</div>
+            <div class="ai-item">3</div>
+        </div>
+        <div class="ai-flex-end ai-box">
+            <div class="ai-item">1</div>
+            <div class="ai-item">2</div>
+            <div class="ai-item">3</div>
+        </div>
+        <div class="ai-baseline ai-box">
+            <div class="ai-todo">TODO</div>
+            <div class="ai-todo">BASELINE</div>
+            <div class="ai-todo">TODO</div>
+            <div class="ai-todo">BASELINE</div>
+        </div>
+    </div>
+
+    <!--  ------------------ flex-direction:colum ------------------  -->
+    <h1>flex-direction:colum</h1>
+    <div class="fdc-container">
+        <img src="https://cdn.pixabay.com/photo/2019/11/22/06/58/macaron-4644246_1280.jpg" alt="">
+        <div class="fdc-content">
+            <div class="fdc-content-2">
+                <h2>Macaron</h2>
+                <p>A macaron or French macaroonis a sweet meringue-based confection made with egg white, icing sugar, granulated sugar, almond meal, and food colouring.</p>
+            </div>
+            <ul>
+                <li><a href="#"><img src="../example/images/facebookIcon.png" alt=""></a></li>
+                <li><a href="#"><img src="../example/images/twitterIcon.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

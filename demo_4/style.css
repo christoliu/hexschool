@@ -1,0 +1,352 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1{
+    margin: 0 auto;
+    text-align: center;
+    border: 3px dotted #000;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 600px;
+    font-size: 32px;
+}
+
+.container{
+    background-color: #000;
+    margin: 0 auto;
+    width: 500px;
+
+    display: flex;
+}
+
+.item{
+    color: red;
+    background: #fff;
+    font-size: 36px;
+    text-align: center;
+    margin: 10px;
+    width: 1000px; /* 依父層比例伸縮 */
+}
+
+.item-long{
+    height: 100px;  /* 改變一個高度，全體都會變 */
+}
+
+/* ------------FLEX概論 - 2------------ */
+
+.item1{
+    width: 80px;
+}
+
+.item2{
+    height: 80px;
+}
+
+.item3{
+    text-align: center;  /* 若沒寫死則依比例自適應 */
+}
+
+/* ------------flex-direction------------ */
+.fd-container{
+    margin: 0 auto;
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fd-box{
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    margin: 10px;
+}
+
+.fd-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.fd-row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.fd-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.fd-column-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.fd-item{
+    background-color: #fff;
+    color: red;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    margin: 5px;
+    text-align: center;
+}
+
+/* ------------justify-content------------ */
+.jc-container{
+    margin: 0 auto;
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.jc-box{
+    width: 200px;
+    height: 100px;
+    background-color: #000;
+    margin: 10px;
+}
+
+.jc-flex-start{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.jc-center{
+    display: flex;
+    justify-content: center;
+}
+
+.jc-space-around{
+    display: flex;
+    justify-content: space-around;
+}
+
+.jc-end{
+    display: flex;
+    justify-content: end;;
+}
+
+.jc-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.jc-space-evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.jc-item{
+    background-color: #fff;
+    color: red;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    margin: 5px;
+    text-align: center;
+}
+
+/* ------------並排選單------------ */
+.menu{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.menu li{
+    width: 100px;
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+.menu a{
+    display: block;
+    background-color: #000;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* ------------flex-wrap------------ */
+.menu-fw{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* nowrap/wrap/wrap-reverse */
+}
+
+.menu-fw li{
+    width: 100px;
+    text-align: center;
+}
+
+.menu-fw a{
+    display: block;
+    background-color: #000;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.menu-fw a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* ------------flex-wrap------------ */
+.ai-container{
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ai-flex-start{
+    align-items: flex-start;
+}
+
+.ai-center{
+    align-items: center;
+}
+
+.ai-strech{
+    align-items: stretch;
+}
+
+.ai-flex-end{
+    align-items: flex-end;
+}
+
+.ai-baseline{
+    align-items: baseline;
+}
+
+.ai-box{
+    width: 140px;
+    height: 140px;
+    background-color: #000;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.ai-item{
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    margin: 3px;
+    text-align: center;
+    color: red;
+}
+
+.ai-todo{
+    background-color: #fff;
+    width: 135px;
+    height: 20px;
+    font-size: 20px;
+    color: red;
+    text-align: center;
+    margin: auto;
+}
+
+/* ------------flex-direction:colum------------ */
+
+.fdc-container{
+    display: flex;
+    justify-content: center;
+}
+
+.fdc-container img{
+    height: 300px;
+    width: 200px;
+}
+
+.fdc-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.fdc-content-2{
+    width: 300px;
+    margin-top: 10px;
+}
+
+.fdc-content-2 h2{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.fdc-content ul{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.fdc-content li{
+    margin-right: 5px;
+}
+
+.fdc-content img{
+    height: 20px;
+    width: 20px;
+}
