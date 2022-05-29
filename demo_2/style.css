@@ -1,0 +1,41 @@
+h1{
+    color: blue;
+    font-size: 40px;
+    border-top: 5px solid red;
+    border-left: 5px dotted green;
+    border-bottom: 5px solid blue;
+    border-right: 5px dashed black;
+}
+
+.blue{
+    color: blue;
+}
+
+p{
+    color: red;
+    font-size: 20px;
+}
+
+a{
+    color: pink;
+    font-size: 20px;
+}
+
+a:hover{
+    color:yellow;
+    font-size: 30px;
+}
+
+a:active{
+    color: green;
+}
+
+.specialDesign{
+    font-family: Verdana;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: right;
+    text-indent: 18px;
+    text-decoration: underline;
+    letter-spacing: 5px;
+}
