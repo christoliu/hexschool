@@ -3,7 +3,7 @@
     background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg);
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-size: 850px 768px, 360px, 310px, 150px;
-    background-position: top right, -220px 590px, calc(100% + 100px) 1600px, 50px;
+    background-position: top right, -220px 590px, calc(100% + 100px) 1560px, 50px 2560px;
 
 }
 @media(max-width:767px){
