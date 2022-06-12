@@ -1,8 +1,27 @@
+/*  ---------- wrap ----------  */
+.wrap{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 850px 768px, 360px, 310px, 150px;
+    background-position: top right, -220px 590px, calc(100% + 100px) 1600px, 50px;
+
+}
+@media(max-width:767px){
+    .wrap{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 126px, 135px, 153px;
+        background-position: -77px 743px, calc(100% + 37px) 3100px, -66px 4800px;
+    }
+}
+
+/*  ---------- container ----------  */
 .container{
     max-width: 1366;
     padding: 0 20px;
     margin: 0 auto;
 }
+
 /*  ---------- navbar ----------  */
 .navbar{
     display: flex;
@@ -68,6 +87,10 @@
         flex-direction: column;
         font-family: "Noto Sans TC";
         margin-top: 32px;
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home_sm.svg);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 334px 245px;
     }
     .content h1{
         font-size: 16px;
@@ -134,10 +157,12 @@
     margin-top: 24px;
 }
 @media(max-width:767px) {
+    .social-media{
+        margin-top: 60px;
+    }
     .social-media h2{
         font-size: 28px;
         line-height: 40px;
-        margin-top: 92px;
     }
     .social-media ul{
         margin-top: 8px;
