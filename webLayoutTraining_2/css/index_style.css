@@ -1,14 +1,13 @@
 /*  ---------- wrap ----------  */
 .wrap{
-    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/bg_home.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg);
+    background-image: url(../img/bg_home.svg), url(../img/ball01.svg), url(../img/ball02.svg), url(../img/ball03.svg);
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-size: 850px 768px, 360px, 310px, 150px;
     background-position: top right, -220px 590px, calc(100% + 100px) 1560px, 50px 2560px;
-
 }
 @media(max-width:767px){
     .wrap{
-        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball02.svg), url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball03.svg);
+        background-image: url(../img/ball01.svg), url(../img/ball02.svg), url(../img/ball03.svg);
         background-repeat: no-repeat, no-repeat, no-repeat;
         background-size: 126px, 135px, 153px;
         background-position: -77px 743px, calc(100% + 37px) 3100px, -66px 4800px;
@@ -24,27 +23,28 @@
 
 /*  ---------- navbar ----------  */
 .navbar{
+    padding: 24px 140px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 122px;
-    margin-right: 152px;
-    padding: 24px 0px;
+    flex-wrap: wrap;
+}
+.navbar .navbar-logo{
+    max-width: 218px;
+    max-height: 40px;
 }
 .navbar img{
-    width: 218px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
 }
 @media(max-width:767px){
     .navbar{
-        margin: 0;
-        padding: 16px 0px;
         border-bottom: 2px solid #FFD153;
-        max-width: calc(100%+40px);
+        padding: 16px 20px;
     }
-    .navbar img{
-        width: 130px;
-        height: 24px;
+    .navbar .navbar-logo{
+        max-width: 130px;
+        max-height: 24px;
     }
 }
 
@@ -113,9 +113,9 @@
 
 /*  ---------- social-media ----------  */
 .social-media{
+    margin-top: 100px;
     font-family: "Noto Sans TC";
     max-width: 969px;
-    margin-top: 100px;
 }
 .social-media h2{
     color: #221E1F;
@@ -125,8 +125,8 @@
     text-align: center;
 }
 .social-media ul{
-    display: flex;
     margin-top: 48px;
+    display: flex;
     justify-content: space-between;
 }
 .social-media li{
@@ -173,7 +173,6 @@
     .social-media li{
         margin-top: 24px;
         max-width: 228px;
-        max-height: 166px;
     }
     .social-media img{
         max-width: 60px;
@@ -183,6 +182,7 @@
         font-size: 18px;
         line-height: 26px;
         margin-top: 16px;
+        white-space: normal;
     }
     .social-media p{
         font-size: 16px;
@@ -195,7 +195,6 @@
 .character{
     margin-top: 100px;
     max-width: 1088px;
-    max-height: 527px;
     font-family: "Noto Sans TC";
     color: #221E1F;
     text-align: center;
@@ -212,21 +211,20 @@
 .character ul{
     margin-top: 48px;
     max-width: 1088px;
-    max-height: 388px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 .character-card{
-    width: 260px;
-    height: 388px;
+    max-width: 260px;
     background-color: #fff;
     box-shadow: 0px 2px 10px #00000014;
     border-radius: 12px;
+    display: flex;
+    flex-direction: column;
 }
 .character-card img{
-    width: 260px;
-    height: 260px;
+    width: 100%;
     border-radius: 12px 12px 0px 0px;
 }
 .character-card h3{
@@ -245,7 +243,6 @@
     .character{
         margin-top: 60px;
         max-width: 355px;
-        max-height: 1796px;
     }
     .character h2{
         font-size: 28px;
@@ -259,13 +256,10 @@
         margin: 0 auto;
         margin-top: 8px;
         max-width: 260px;
-        max-height: 1624px;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: nowrap;
     }
     .character-card{
         margin-top: 24px;
+        max-width: 260px;
     }
 }
 
@@ -276,20 +270,17 @@
     font-family: "Noto Sans TC";
     color: #221E1F;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 137px;
 }
 .feature ul{
-    width: 507px;
-    height: 588px;
+    max-width: 507px;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 27px 47px;
 }
 .feature li{
-    width: 230px;
-    height: 280px;
+    max-width: 230px;
 }
 .feature li img{
     max-width: 52px;
@@ -329,7 +320,7 @@
 @media(max-width:767px){
     .feature{
         max-width: 335px;
-        margin-top: 28px;
+        margin-top: 60px;
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
@@ -348,17 +339,15 @@
         margin: 0 auto;
     }
     .feature ul{
-        width: 230px;
-        height: 1208px;
+        max-width: 230px;
         gap: 24px;
     }
     .feature li{
-        width: 230px;
+        max-width: 230px;
         height: 284px;
     }
     .feature li img{
         max-width: 52px;
-        max-height: 52px;
         margin-top: 49px;
         margin-left: 48px;
     }
@@ -372,119 +361,114 @@
 }
 
 /*  ---------- comment ----------  */
-.comment{
-    margin: 100px 0px;
+.swiper{
     max-width: 1088px;
-    max-height: 432px;
-    font-family: "Noto Sans TC";
-    color: #221E1F;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
-.comment h2{
-    font-size: 32px;
-    line-height: 46px;
-    font-weight: bold;
+.swiper h2{
     text-align: center;
+    font: normal normal bold 32px/46px 'Noto Sans TC';
+    margin-bottom: 48px;
 }
-.comment ul{
-    margin-top: 48px;
-    display: flex;
-    justify-content: space-between;
+.swiper-pagination{
+    --swiper-theme-color: #ffd153;  /* 將套件主色改為黃色 */
 }
-.comment li{
-    max-width: 352px;
-    max-height: 304px;
-    position: relative;
-}
-.comment-content{
+.comment-card{
     margin-top: 56px;
     max-width: 352px;
-    max-height: 248px;
     padding: 48px 32px 24px 32px;
-    background-color: #FFFFFF;
+    box-shadow: 0px 2px 10px #00000014;
     border-radius: 12px;
+    background-color: #FFFFFF;
 }
-.comment .commentor-headshot{
+.commentor-headshot{
     max-width: 80px;
     max-height: 80px;
+    /*  調整人物頭像位置 */
+    top: -50px;
     border-radius: 50%;
+    box-shadow: 0px 2px 10px #00000014;
     position: absolute;
     left: 32px;
     top: 0px;
 }
-.comment-content p{
-    font-size: 16px;
-    line-height: 24px;
+.comment-card p{
+    text-align: left;
+    font: normal normal normal 16px/24px 'Noto Sans TC';
+    letter-spacing: 0px;
+    color: #221E1F;
 }
-.commenter{
+.commentor{
     margin-top: 48px;
-    position: relative;
-}
-.commenter-intro h3{
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: bold;
-}
-.commenter-intro p{
-    margin-top: 8px;
-}
-.star{
     display: flex;
-    gap: 8px;
-    position: absolute;
-    right: 0px;
-    bottom: 4px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.star img{
-    width: 17px;
+.commentor-intro h3{
+    text-align: left;
+    font: normal normal bold 16px/24px 'Noto Sans TC';
+    letter-spacing: 0px;
+    color: #221E1F;
+    margin-bottom: 8px;
+}
+.commentor-star{
+    margin-top: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.commentor-star img{
+    width: 16px;
     height: 16px;
 }
+.swiper-pagination-bullet-active {/* 將底部 pagination 分頁的 active 狀態改為想要的樣式 */
+  width: 20px;
+  border-radius: 8px;
+}
+.swiper-pagination {/* 讓分頁圓點移至下方 */
+  margin-top: 24px;
+  position: static;
+}
 @media(max-width:767px){
-    .comment .phone-none{
-        display: none;
-    }
-    .comment{
+    .swiper{
         margin-top: 60px;
+        margin-bottom: 60px;
         max-width: 355px;
-        max-height: 410px;
     }
-    .comment h2{
+    .swiper h2{
         font-size: 28px;
         line-height: 40px;
+        margin-bottom: 32px;
     }
-    .comment ul{
-        margin-top: 32px;
-    }
-    .comment li{
-        width: 335px;
-    }
-    .comment-content{
-        width: 335px;
+    .comment-card{
+        max-width: 335px;
         padding: 48px 17px 16px 16px;
-        background-color: #FFFFFF;
-        border-radius: 12px;
     }
-    .commenter{
+    .commentor{
         margin-top: 32px;
     }
-    .star{
-        right: 22px;
-        bottom: 4px;
+    .commentor-star{
+        margin-top: 35px;
+        margin-right: 20px;
+
     }
 }
 
+
 /*  ---------- footer ----------  */
 .footer-plan{
-    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg);
+    background-image: url(../img/home_footer.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 503px;
-    padding-top: 260px;
+    padding-top: 320px;
+    padding-bottom: 100px;
 }
 .footer-plan .df{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 .footer-plan h2{
@@ -497,8 +481,8 @@
 }
 @media(max-width:767px){
     .footer-plan{
-        height: 461px;
         padding-top: 293px;
+        padding-bottom: 60px;
     }
     .footer-plan h2{
         font-size: 24px;
@@ -510,7 +494,7 @@
 .footer{
     background: #F5F5F5;
     text-align: center;
-    padding: 16px 0px;
+    padding-top: 16px 0px;
     font-size: 16px;
     line-height: 24px;
 }
@@ -529,6 +513,7 @@
     position: fixed;
     top: 674px;
     right: 48px;
+    z-index: 99;
 }
 .top-btn:hover{
     opacity: 0.5;
