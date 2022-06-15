@@ -27,3 +27,101 @@ function initSwiper() { // 自訂初始化的 Swiper 套件的函式
 
 /* 觸發自己定義的函式 */
 initSwiper();
+
+/* QA觸發 */
+function faq1_open() {
+    let myImage = document.getElementById('faq1');
+    let mySrc = myImage.getAttribute('src');
+    let myParagraph = document.getElementById('faq1_p');
+    if(mySrc === 'img/icon_plus.svg') {
+      myImage.setAttribute ('src','img/icon_minus.svg');
+      myParagraph.setAttribute ('class','v-v');
+      document.getElementById('faq2').setAttribute ('src','img/icon_plus.svg');
+      document.getElementById('faq3').setAttribute ('src','img/icon_plus.svg');
+      document.getElementById('faq2_p').setAttribute('class','v-h');
+      document.getElementById('faq3_p').setAttribute('class','v-h');
+    } else {
+      myImage.setAttribute ('src','img/icon_plus.svg');
+      myParagraph.setAttribute ('class','v-h');
+    }
+}
+function faq2_open() {
+    let myImage = document.getElementById('faq2');
+    let mySrc = myImage.getAttribute('src');
+    let myParagraph = document.getElementById('faq2_p');
+    if(mySrc === 'img/icon_plus.svg') {
+      myImage.setAttribute ('src','img/icon_minus.svg');
+      myParagraph.setAttribute ('class','v-v');
+      document.getElementById('faq3').setAttribute ('src','img/icon_plus.svg');
+      document.getElementById('faq1').setAttribute ('src','img/icon_plus.svg');
+      document.getElementById('faq3_p').setAttribute('class','v-h');
+      document.getElementById('faq1_p').setAttribute('class','v-h');
+    } else {
+      myImage.setAttribute ('src','img/icon_plus.svg');
+      myParagraph.setAttribute ('class','v-h');
+    }
+}
+function faq3_open() {
+    let myImage = document.getElementById('faq3');
+    let mySrc = myImage.getAttribute('src');
+    let myParagraph = document.getElementById('faq3_p');
+    if(mySrc === 'img/icon_plus.svg') {
+      myImage.setAttribute ('src','img/icon_minus.svg');
+      myParagraph.setAttribute ('class','v-v');
+      document.getElementById('faq2').setAttribute ('src','img/icon_plus.svg');
+      document.getElementById('faq1').setAttribute ('src','img/icon_plus.svg');
+      document.getElementById('faq2_p').setAttribute('class','v-h');
+      document.getElementById('faq1_p').setAttribute('class','v-h');
+    } else {
+      myImage.setAttribute ('src','img/icon_plus.svg');
+      myParagraph.setAttribute ('class','v-h');
+    }
+}
+
+
+/**/
+function cost10k(){
+    let pplNum = 10000;
+    let sMoney = 600;
+    let bMoney = 1600;
+    document.getElementById('countA').innerHTML = pplNum; 
+    document.getElementById('countB').innerHTML = (pplNum/5000 - 1) * sMoney;
+    document.getElementById('countC').innerHTML = pplNum;
+    document.getElementById('countD').innerHTML = (pplNum/5000 - 1) * bMoney;
+}
+function cost15k(){
+    let pplNum = 15000;
+    let sMoney = 600;
+    let bMoney = 1600;
+    document.getElementById('countA').innerHTML = pplNum; 
+    document.getElementById('countB').innerHTML = (pplNum/5000 - 1) * sMoney;
+    document.getElementById('countC').innerHTML = pplNum;
+    document.getElementById('countD').innerHTML = (pplNum/5000 - 1) * bMoney;
+}
+function cost20k(){
+    let pplNum = 20000;
+    let sMoney = 600;
+    let bMoney = 1600;
+    document.getElementById('countA').innerHTML = pplNum; 
+    document.getElementById('countB').innerHTML = (pplNum/5000 - 1) * sMoney;
+    document.getElementById('countC').innerHTML = pplNum;
+    document.getElementById('countD').innerHTML = (pplNum/5000 - 1) * bMoney;
+}
+function cost25k(){
+    let pplNum = 25000;
+    let sMoney = 600;
+    let bMoney = 1600;
+    document.getElementById('countA').innerHTML = pplNum; 
+    document.getElementById('countB').innerHTML = (pplNum/5000 - 1) * sMoney;
+    document.getElementById('countC').innerHTML = pplNum;
+    document.getElementById('countD').innerHTML = (pplNum/5000 - 1) * bMoney;
+}
+function cost30k(){
+    let pplNum = 30000;
+    let sMoney = 600;
+    let bMoney = 1600;
+    document.getElementById('countA').innerHTML = '>25000'; 
+    document.getElementById('countB').innerHTML = (pplNum/5000 - 1) * sMoney;
+    document.getElementById('countC').innerHTML = '>25000';
+    document.getElementById('countD').innerHTML = (pplNum/5000 - 1) * bMoney;
+}
